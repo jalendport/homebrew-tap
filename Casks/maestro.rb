@@ -6,25 +6,25 @@ cask "maestro" do
     end
   end
 
-  version "1.2.0"
+  version "2.0.0"
 
   on_macos do
     on_arm do
-      sha256 "22e201d88a8215af6b649f0262354ae2ceda6dd6f97c91f2d0f564ebbf41166f"
+      sha256 "3139869c68522a2a30b2a214885bd20fca2ce6ddee305b1e8a1c55f7e635ee4f"
       url "https://github.com/jalendport/maestro/releases/download/v#{version}/maestro_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3a6d15d2e79f223bfe1c014a183d42219e57790c5fb6b0593cba1a7a9eb0ebf7"
+      sha256 "a6d28927bee92feb349e43788e65cf5d274ee1a66cdd3db517317cc744ccab0a"
       url "https://github.com/jalendport/maestro/releases/download/v#{version}/maestro_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "1e880a14173f618b08fca3d589684b84613c4e6defab6fd5ddf3ff598cc0341e"
+      sha256 "9dc036800b52b74b436c8cf6484bba817207f283e53c28d5fd15eb684d756403"
       url "https://github.com/jalendport/maestro/releases/download/v#{version}/maestro_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ee15cb0e43fa49f406f4eee5de62923eaf83e20852de2d00e449619e4e4d2c42"
+      sha256 "fc5018e9e2dcdd14cab7151a331cb55514a010eeaf1981cfaee314d3ef4987c5"
       url "https://github.com/jalendport/maestro/releases/download/v#{version}/maestro_linux_amd64.tar.gz"
     end
   end
@@ -39,5 +39,5 @@ cask "maestro" do
 
   binary "maestro"
 
-  # No zap stanza required
+  zap :not_required
 end
